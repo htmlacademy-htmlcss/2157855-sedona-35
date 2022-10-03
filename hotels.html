@@ -18,7 +18,7 @@
             <a class="navigation__link" href="">О нас</a><!--Добавить картинку в каталог-->
             </li>
             <li class="navigation__item">
-            <a class="navigation__link" href="">Гостиницы</a><!--Добавить картинку в каталог-->
+            <a class="navigation__link navigation__link--current" href="">Гостиницы</a><!--Добавить картинку в каталог-->
             </li>
           </ul>
           <ul class="navigation__list navigation__list--user">
@@ -34,6 +34,63 @@
           </ul>
         </nav>
       </header>
+      <main class="main-inner">
+        <header class="inner-header">
+            <h1 class="inner-header__title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html"></a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">Гостиницы</a>
+                </li>
+            </ul>
+        </header>
+        <section class="catalog-hotels">
+            <h2 classs="visually-hidden"> Список найденных гостиниц с фитльтрами</h2>
+            <form class="catalog-hotels__filter" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="catalog-hotels__group">
+                    <legend class="catalog-hotels__title">Инфраструктура:</legend>
+                    <ul class="catalog-hotels_list">
+                        <li class="catalog-hotels_item">
+                            <label class="control">
+                              <input class="control__input" type="checkbox" name="swimming-pool" checked>
+                              Бассейн
+                          </label>
+                        </li>
+                        <li class="catalog-hotels_item">
+                            <label class="control">
+                              <input class="control__input" type="checkbox" name="parking" checked>
+                              Парковка
+                            </label>
+                        </li>
+                        <li class="catalog-hotels_item">
+                            <label class="control">
+                              <input class="control__input" type="checkbox" name="Wi-Fi">
+                              Wi-Fi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+
+
+                <fieldset class="catalog-hotels__group">
+                    <legend class="catalog-hotels__title">Тип жилья:</legend>
+                </fieldset>
+
+
+
+                <button class="catalog-hotels__button-apply" type="submit">Применить</button>
+                <button class="catalog-hotels__button-reset" type="submit">Сбросить</button>
+
+
+
+            </form>
+        </section>
+
+
+      </main>
       <footer class="page-footer">
         <section class="footer-subscription">
           <h2 class="footer-subscription__title">Подпишитесь на рассылку</h2>
