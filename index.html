@@ -23,10 +23,10 @@
         </ul>
         <ul class="navigation__list navigation__list--user">
           <li class="navigation__item">
-            <a class="navigation__link-search" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation__icon-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link-top" href="#"><span class="visually-hidden">Избранное</span></a>
+            <a class="navigation__icon-link--top" href="#"><span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation__item">
             <a class="navigation__button" href="#">Хочу сюда!</a>
@@ -38,7 +38,7 @@
         <h1 class="visually-hidden">Гостиница "Седона"</h1>
         <img class="main-index__image" src="/images/welcome.svg" width="458" height="352" alt="Добро пожаловать в гостиницу 'Седона'.">        <!--width="" height=""-->
         <h2 class="main-index__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <P class="main-index__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</P>
+        <p class="main-index__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
@@ -64,17 +64,19 @@
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Жильё</h3>
-            <p class="advantages__description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+        </ul>
+        <ul class="comfort">
+          <li class="comfort__item comfort__item--home">
+            <h3 class="comfort__title">Жильё</h3>
+            <p class="comfort__description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Еда</h3>
-            <p class="advantages__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <li class="comfort__item comfort__item--food">
+            <h3 class="comfort__title">Еда</h3>
+            <p class="comfort__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Сувениры</h3>
-            <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
+          <li class="comfort__item comfort__item--present">
+            <h3 class="comfort__title">Сувениры</h3>
+            <p class="comfort__description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -85,13 +87,13 @@
       </section>
     </main>
     <footer class="page-footer">
-        <section class="footer-subscription">
+      <section class="footer-subscription footer-subscription--index">
           <h2 class="footer-subscription__title">Подпишитесь на рассылку</h2>
           <p class="footer-subscription__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="footer-subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="footer-subscription__email">E-mail</label>
-            <input class="footer-subscription__field" placeholder="Ваш e-mail" type="email" name="footer-subscription__email" id="footer-subscription__email" required>
-            <button class="footer-subscription__button" type="submit">Подписаться</button>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="form__email">E-mail</label>
+            <input class="form__field" placeholder="Ваш e-mail" type="email" name="footer-subscription__email" id="form__email" required>
+            <button class="form__button" type="submit">Подписаться</button>
           </form>
       </section>
       <section class="social">
