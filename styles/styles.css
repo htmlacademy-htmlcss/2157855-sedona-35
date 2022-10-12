@@ -14,3 +14,12 @@
     src: url(../fonts/ptsans-700.woff2) format(woff2);
     font-display: swap;
 }
+body {
+    font-family: "PT sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+title {
+    font-family: "PT sans", sans-serif;
+    font-weight: 700;
+}
