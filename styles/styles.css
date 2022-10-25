@@ -193,7 +193,7 @@ body {
     background-color: #FFFFFF;
 }
 
-.inner-header {
+.catalog-header{
     background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ body {
     text-decoration: none;
 }
 
-.catalog-hotels__title {
+.catalog-header__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -229,7 +229,7 @@ body {
     color: #FFFFFF;
 }
 
-.catalog-hotels__button-apply {
+.catalog-header__button-apply {
     background: #82B3D3;
     font-weight: 700;
     font-size: 16px;
@@ -238,7 +238,7 @@ body {
     text-transform: uppercase;
 }
 
-.catalog-hotels__button-reset {
+.catalog-header__button-reset {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
