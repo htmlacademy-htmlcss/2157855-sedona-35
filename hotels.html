@@ -36,36 +36,35 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
-      <h1 class="inner-header__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html"></a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Гостиницы</a>
-        </li>
-      </ul>
-    </header>
-    <section class="catalog-hotels">
-      <h2 class="visually-hidden"> Список найденных гостиниц с фильтрами</h2>
-      <form class="catalog-hotels__filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-hotels__group">
-          <legend class="catalog-hotels__title">Инфраструктура:</legend>
-          <ul class="catalog-hotels__list">
-            <li class="catalog-hotels__item">
+    <div class="catalog-header">
+      <header class="inner-header">
+        <h1 class="inner-header__title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html"></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+      <form class="catalog-header__filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-header__group">
+          <legend class="catalog-header__title">Инфраструктура:</legend>
+          <ul class="catalog-header__list">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="swimming-pool" checked>
                 Бассейн
               </label>
             </li>
-            <li class="catalog-hotels__item">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="parking" checked>
                 Парковка
               </label>
             </li>
-            <li class="catalog-hotels__item">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="Wi-Fi">
                 Wi-Fi
@@ -73,22 +72,22 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-hotels__group">
-          <legend class="catalog-hotels__title">Тип жилья:</legend>
-          <ul class="catalog-hotels__list">
-            <li class="catalog-hotels__item">
+        <fieldset class="catalog-header__group">
+          <legend class="catalog-header__title">Тип жилья:</legend>
+          <ul class="catalog-header__list">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-house" value="hotel" checked>
                 Гостиница
               </label>
             </li>
-            <li class="catalog-hotels__item">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-house" value="motel" >
                 Мотель
               </label>
             </li>
-            <li class="catalog-hotels__item">
+            <li class="catalog-header__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-house" value="apartments">
                 Апартаменты
@@ -96,9 +95,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="catalog-hotels__button-apply" type="submit">Применить</button>
-        <button class="catalog-hotels__button-reset" type="reset">Сбросить</button>
+        <button class="catalog-header__button-apply" type="submit">Применить</button>
+        <button class="catalog-header__button-reset" type="reset">Сбросить</button>
       </form>
+    </div>
+    <section class="catalog-hotels">
+      <h2 class="visually-hidden"> Список найденных гостиниц с фильтрами</h2>
       <p class="catalog-hotels__number">Найдено гостиниц: <span class="visually-hidden">38</span></p>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
