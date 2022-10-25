@@ -46,6 +46,7 @@ body {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .main-index {
     color: #000000;
     background-color: #ffffff;
@@ -143,6 +144,7 @@ body {
     background: #756157;
     text-decoration: none;
 }
+
 .page-footer {
     color: #000000;
     background-color: #ffffff;
@@ -198,8 +200,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #000000;
-
-
 }
 
 .inner-header__title {
@@ -350,6 +350,7 @@ body {
 .footer-subscription--individ .footer-subscription__title {
     color: #000000;
 }
+
 .footer-subscription--individ .footer-subscription__description {
     color: #333333;
 }
