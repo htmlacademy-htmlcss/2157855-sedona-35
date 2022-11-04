@@ -17,10 +17,10 @@
 html {
     height: 100%;
 }
+
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    min-width: 1200px;
     min-height: 100%;
     font-family: "PT sans", sans-serif;
     font-size: 18px;
@@ -29,24 +29,33 @@ body {
     background:#FFFFFF;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .page-header {
     color: #000000;
 }
 
 .navigation {
     display: flex;
-    margin: 0 auto;
+    padding: 0 70px;
 }
 
 .navigation-list {
-    width: 520px;
-    margin: 0;
-    padding: 0;
-  }
-.navigation__list--user {
-    max-width: 300px;
-    margin-left: auto;
+    max-width: 360px;
+    margin-left: 30px;
 }
+
+.navigation__list--user {
+    max-width: 270px;
+    margin-left: auto;
+
+}
+
 .navigation__link {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -72,6 +81,7 @@ body {
 .main-container {
     flex-grow: 1;
 }
+
 .main-index {
     color: #000000;
     background-color: #ffffff;
@@ -337,23 +347,13 @@ body {
     background: transparent;
 }
 
-.catalog-hotels {
-    width: 100%;
-    margin: 0 70px;
-}
-
 .hotels-container {
-    display: flex;
+  display: flex;
 }
-
-.hotel-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
 
 .catalog-hotels__number {
+    margin: 0;
+    margin-right: 200px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -362,11 +362,17 @@ body {
 }
 
 .select-control {
+    margin-right: auto;
+    width: 295px;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+.hotel-list {
+  display: flex;
 }
 
 .card {
@@ -377,18 +383,18 @@ body {
     }
 
 .hotel-card__link {
-    width: 100%;
     display: flex;
+    flex-direction: column;
     color: #000000;
     text-decoration: none;
 }
 
 .hotel-card__image {
-    display: flex;
-    width: 100%;
+  width: 100%;
 }
 
 .hotel-card__title {
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -440,6 +446,11 @@ body {
 
 .button--green {
     background: #7DB54F;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination__link {
