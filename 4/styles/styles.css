@@ -88,16 +88,11 @@ body {
     text-align: center;
 }
 
-.page-container {
-    margin: 0 auto;
-}
-
-.main-index__image {
-    background-image: url("../images/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 0 auto;
+.main-container__image {
+  background-image: url("../images/index-background.jpg");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .main-index__title {
@@ -118,7 +113,6 @@ body {
 
 .advantages__list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
@@ -143,7 +137,6 @@ body {
     color: #333333;
 }
 
-
 .advantages__item--blue-1 {
     display: flex;
     width: 100%;
@@ -165,7 +158,6 @@ body {
 
 .comfort {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -215,6 +207,7 @@ body {
 .footer-container {
     display:flex;
     justify-content: space-between;
+    padding: 0 70px;
 }
 
 .social__list {
@@ -225,7 +218,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 .footer-subscription--index {
     background-image: url("../images/footer-background.jpg");
@@ -282,20 +274,21 @@ body {
     background-color: #FFFFFF;
 }
 
-.catalog-header {
+.catalog-container {
+    width: 100%;
     background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #000000;
 }
 
-.catalog-container {
-    width: 100%;
-    margin: 0 70px;
+.inner-header {
+  padding: 0 70px;
 }
 
 .catalog-filter  {
     display: flex;
+    padding:0 70px;
 }
 
 .inner-header__title {
@@ -349,6 +342,7 @@ body {
 
 .hotels-container {
   display: flex;
+  padding: 0 70px;
 }
 
 .catalog-hotels__number {
@@ -373,6 +367,7 @@ body {
 
 .hotel-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -380,7 +375,7 @@ body {
     flex-direction: column;
     width: 340px;
     padding: 20px;
-    }
+}
 
 .hotel-card__link {
     display: flex;
@@ -451,6 +446,7 @@ body {
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 70px;
 }
 
 .pagination__link {
