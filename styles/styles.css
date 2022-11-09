@@ -93,6 +93,7 @@ body {
 }
 
 .navigation__button {
+    display: inline-block;
     padding: 8px 34px;
     font-family: "PT Sans", sans-serif;
     background: #756157;
@@ -250,6 +251,7 @@ body {
 }
 
 .search__button {
+    display: inline-block;
     margin: 0;
     padding: 8px 50px;
     font-family: "PT Sans", sans-serif;
@@ -365,8 +367,7 @@ body {
 }
 
 .contacts__site-link {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     width: 115px;
     height: 33px;
 }
@@ -379,9 +380,9 @@ body {
 .catalog-container {
     padding: 35px 70px 70px;
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #82B3D3;;
 }
 
 .catalog-filter  {
@@ -629,6 +630,7 @@ body {
 }
 
 .button--brown {
+    display: inline-block;
     background: #756157;
 }
 
