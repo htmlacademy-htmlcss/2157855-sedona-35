@@ -377,30 +377,42 @@ body {
 }
 
 .catalog-container {
-    width: 100%;
+    padding: 35px 70px 70px;
     background-image: url("../images/catalog-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #000000;
 }
 
-.inner-header {
-  padding: 0 70px;
-}
-
 .catalog-filter  {
     display: flex;
-    padding:0 70px;
 }
 
 .inner-header__title {
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
 }
 
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.breadcrumbs__item {
+  list-style-type: none;
+  margin-right: 28px;
+}
+
 .breadcrumbs__link {
+    min-width: 13px;
+    min-height: 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -408,7 +420,27 @@ body {
     text-decoration: none;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter__group {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter__item {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.catalog-filter__list {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter__title {
+    margin-bottom: 32px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -422,7 +454,17 @@ body {
     color: #FFFFFF;
 }
 
+.catalog-filter__group--infrastructure {
+  margin-right: 70px
+}
+
+.catalog-filter__button {
+  display: flex;
+  flex-direction: column;
+}
 .catalog-filter__button-apply {
+    margin-top: 56px;
+    padding: 8px 50px;
     font-family: "PT Sans", sans-serif;
     background: #82B3D3;
     font-weight: 700;
@@ -433,6 +475,8 @@ body {
 }
 
 .catalog-filter__button-reset {
+    margin-top: 32px;
+    padding: 8px auto;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -442,9 +486,11 @@ body {
     background: transparent;
 }
 
+
 .hotels-container {
   display: flex;
-  padding: 0 70px;
+  align-items: center;
+  padding: 50px 70px 40px;
 }
 
 .catalog-hotels__number {
@@ -458,6 +504,7 @@ body {
 }
 
 .select-control {
+    padding: 14px 50px 14px 20px;
     margin-right: auto;
     width: 295px;
     font-family: "PT Sans", sans-serif;
@@ -465,6 +512,15 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+.catalog-hotels__button {
+    display: flex;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .hotel-list {
@@ -487,11 +543,16 @@ body {
 }
 
 .hotel-card__image {
+  display: block;
+  order: -1;
+  height: auto;
+  margin-bottom: 16px;
   width: 100%;
 }
 
 .hotel-card__title {
     margin: 0;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
