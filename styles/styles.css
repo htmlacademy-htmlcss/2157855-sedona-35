@@ -93,6 +93,7 @@ body {
 }
 
 .navigation__button {
+    display: inline-block;
     padding: 8px 34px;
     font-family: "PT Sans", sans-serif;
     background: #756157;
@@ -250,6 +251,7 @@ body {
 }
 
 .search__button {
+    display: inline-block;
     margin: 0;
     padding: 8px 50px;
     font-family: "PT Sans", sans-serif;
@@ -365,8 +367,7 @@ body {
 }
 
 .contacts__site-link {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     width: 115px;
     height: 33px;
 }
@@ -379,9 +380,9 @@ body {
 .catalog-container {
     padding: 35px 70px 70px;
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color: #82B3D3;;
 }
 
 .catalog-filter  {
@@ -496,7 +497,6 @@ body {
     background: transparent;
 }
 
-
 .hotels-container {
   display: flex;
   align-items: center;
@@ -534,13 +534,18 @@ body {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: repeat(3, 340px);
+   margin: 0 70px 40px;
+   padding: 0;
+   padding-bottom: 39px;
+   gap: 20px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     width: 340px;
     padding: 20px;
 }
@@ -558,6 +563,7 @@ body {
   height: auto;
   margin-bottom: 16px;
   width: 100%;
+  object-fit: cover;
 }
 
 .hotel-card__title {
@@ -568,26 +574,15 @@ body {
     line-height: 28px;
 }
 
-.hotel-card__description {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+.hotel-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  box-sizing: border-box;
+  gap: 16px 20px;
 }
 
-.hotel-card__buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.hotel-card__ratings {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hotel-card__buttons .button {
-  padding: 8px 20px;
+.hotel-card__detail {
+  padding: 8px 0;
 }
 
 .hotel-card__type {
@@ -629,6 +624,7 @@ body {
 }
 
 .button--brown {
+    display: inline-block;
     background: #756157;
 }
 
